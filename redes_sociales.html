@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Sitio Web</title>
+    <title>Mí Sitio Web</title>
 </head>
-<body>
+<body style="display: flex; flex-direction: column; min-height: 100vh; margin: 0;">
     <header>
-        <h1>Portfolio profesional - Redes Sociales</h1>
+        <div style="font-size: larger; color: rgb(163, 3, 237); text-align: center;">
+            <h1>
+                <u>Redes Sociales</u>
+            </h1>
+        </div>
         <nav>
             <ul>
                 <li> <a href="index.html">HOME</a></li>
@@ -20,14 +24,27 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main style="flex-grow: 1;">
         <h2>
             <u>Mis Redes Sociales</u>
         </h2>
-        <p>✳️Presione el logo de Instagram para acceder a mi perfil:&nbsp;</p>
-        <a href="https://www.instagram.com/ezesouza_a?igsh=MXJ6MGZld21xMGpodw==" target="_blank"><img src="img/logo_instagram.png" alt="Instagram"></a>
-        <p>✳️Presione el logo de "X" (Twitter) para acceder a mi perfil:&nbsp;</p>
-        <a href="https://x.com/SouzaEze?t=zkKELhseNcKTVGsHj3_G1w&s=09" target="_blank"><img src="img/logo_X.png" alt="X (Twitter)"></a>
+        <div style="display: flex; justify-content: center; gap: 20px; text-align: center;">
+            <div>
+                <p>✳️Presione el logo de Instagram para acceder a mi perfil:&nbsp;</p>
+                <a href="https://www.instagram.com/ezesouza_a?igsh=MXJ6MGZld21xMGpodw==" target="_blank">
+                    <img src="img/logo_instagram.png" alt="Instagram" style="max-width: 400px;">
+                </a>
+                <br>
+            </div>
+            <div>
+                <p>✳️Presione el logo de "X" (Twitter) para acceder a mi perfil:&nbsp;</p>
+                <a href="https://x.com/SouzaEze?t=zkKELhseNcKTVGsHj3_G1w&s=09" target="_blank">
+                    <img src="img/logo_X.png" alt="X (Twitter)" style="max-width: 400px;">
+                </a>
+                <br>
+                <br>
+            </div>
+        </div>
 
     </main>
 

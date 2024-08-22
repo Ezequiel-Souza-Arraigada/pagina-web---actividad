@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mí Sitio Web</title>
 </head>
-<body>
+<body style="display: flex; flex-direction: column; min-height: 100vh; margin: 0;">
     <header>
         <div style="font-size: larger; color: rgb(219, 101, 10); text-align: center;">
             <h1>
-                <u>Portfolio profesional - Proyecto Destacado</u>
+                <u>Proyecto Destacado</u>
             </h1>
         </div>
         <nav>
@@ -24,7 +24,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main style="flex-grow: 1;">
         <h2>
             <u>Proyecto YPF</u>
         </h2>
@@ -49,9 +49,15 @@
             compañero desarrollamos el modelo visual del software, creando las diferentes pantallas de la aplicación de YPF, así como
             los nuevos apartados y secciones que incluimos con nuestra nueva unidad de negocio.</p>
             <br>
-            <img src="img/ypf.png" alt="Imagen Proyecto YPF">
-            <br>
-            <i>Imagen de la presentación "Proyecto YPF"</i>
+            <div style="display: flex; justify-content: center; gap: 20px; text-align: center;">
+                <div>
+                    <img src="img/ypf.png" alt="Imagen Proyecto YPF" style="max-width: 700px;">
+                    <br>
+                    <i>Imagen de la presentación "Proyecto YPF"</i>
+                    <br>
+                    <br>
+                </div>
+            </div>
 
     </main>
 
