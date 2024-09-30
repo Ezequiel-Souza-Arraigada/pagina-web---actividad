@@ -4,44 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mí Sitio Web</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body style="display: flex; flex-direction: column; min-height: 100vh; margin: 0;">
+<body>
     <header>
-        <div style="font-size: larger; color: cadetblue; text-align: center;">
-            <h1>
-                <u>Portfolio profesional</u>
-            </h1>
+        <div class="header-container">
+            <h1>EZ</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pages/sobre_mi.html">Sobre mí</a></li>
+                    <li><a href="pages/curriculum.html">Currículum</a></li>
+                    <li><a href="pages/contacto.html">Contacto</a></li>
+                    <li><a href="pages/proyecto.html">Proyecto</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li>HOME</li>
-                <li> <a href="sobre_mi.html">Sobre mí</a></li>
-                <li> <a href="curriculum.html">Currículum</a></li>
-                <li> <a href="contacto.html">Contacto</a></li>
-                <li> <a href="redes_sociales.html">Redes Sociales</a></li>
-                <li> <a href="certifications_&_awards.html">Certificaciones y Reconocimientos</a></li>
-                <li> <a href="proyecto_destacado.html">Proyecto Destacado</a></li>
-            </ul>
-        </nav>
     </header>
-    <main style="flex-grow: 1;">
-        <div style="text-align: center;">
-            <img src="img/fotopersonal.webp" alt="Foto de Ezequiel" style="max-width: 300px;">
-            <br>
-            <i>Foto de Ezequiel</i>
-            <br>
+    <main>
+        <div class="profile-container">
+            <img src="img/fotopersonal.webp" alt="Foto de Ezequiel" class="profile-photo">
+            <div class="profile-info">
+                <h2>Ezequiel Souza Arraigada</h2>
+                <p>Estudiante de Licenciatura en Gestión de Tecnología de la Información</p>
+            </div>
         </div>
 
-        <p>Me llamo Ezequiel Souza Arraigada, tengo 19 años y soy un estudiante de UADE, donde curso la Licenciatura en Gestión
-            de Tecnología de la Información. La tecnología siempre me gustó y me llamó la atención; disfruto mucho aprender continuamente
-            sobre sus avances y me entusiasma la idea de seguir trabajando en este campo en el futuro.</p>
-        <p>Este año completé un curso de programador en Python, obteniendo un certificado al finalizarlo.
-            Además, trabajé en proyectos colaborativos con compañeros de curso, donde diseñamos y desarrollamos una planificación
-            para un posible nuevo modelo de negocio para la empresa YPF en Argentina.</p>
+        <div class="socials-container">
+            <h2>Redes Sociales:</h2>
+            <div>
+                <a href="https://www.instagram.com/ezesouza_a?igsh=MXJ6MGZld21xMGpodw==" target="_blank">
+                    <img src="img/logo_instagram.png" alt="Instagram" class="social-logo">
+                </a>
+                <a href="https://x.com/SouzaEze?t=zkKELhseNcKTVGsHj3_G1w&s=09" target="_blank">
+                    <img src="img/logo_X.png" alt="X (Twitter)" class="social-logo">
+                </a>
+            </div>
+        </div>
     </main>
 
-    <footer style="background-color: #333; color: rgb(255, 255, 255); padding: 10px; text-align: center;">
-        <p>Derechos reservados</p>
+    <footer>
+        <p>Derechos reservados - 2024 UADE</p>
     </footer>
 </body>
 </html>
