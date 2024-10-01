@@ -4,6 +4,15 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
+main {
+    flex: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     background-image: url('/img/imagenfondo.jpg');
     background-size: cover;
@@ -19,26 +28,53 @@ body {
 
 body::before {
     content: '';
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(30, 30, 30, 0.678); /* Gris oscuro con transparencia */
-    z-index: -1; /* Detrás del contenido */
+    background-color: rgba(10, 25, 50, 0.7); 
+    z-index: -1;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #4774E7; /* Cambia a un azul claro */
-    padding: 10px 20px; /* Espaciado superior e inferior */
+    background-color: #4774E7; 
+    padding: 10px 20px; 
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
 .header-container h1 {
     margin: 0;
     color: white;
+}
+
+header nav ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 15px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+/* Efecto al pasar el mouse sobre el enlace */
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo semi-transparente al pasar el mouse */
+    color: #4774E7; /* Cambia el color del texto al pasar el mouse */
+    border-radius: 5px; /* Esquinas redondeadas opcionales */
 }
 
 nav ul {
@@ -50,22 +86,22 @@ nav ul {
 }
 
 nav a {
-    color: white; /* Cambia el color del texto del menú */
+    color: white;
     text-decoration: none;
 }
 
 .profile-info h2 {
-    font-size: 28px; /* Aumentar el tamaño del título */
-    margin: 0; /* Sin margen */
-    color: #000000;
+    font-size: 28px;
+    margin: 0; 
+    color: #ffffff;
 
 }
 
 .profile-info p {
-    font-size: 20px; /* Aumentar el tamaño del texto */
-    margin-top: 5px; /* Espacio superior */
-    line-height: 1.5; /* Espaciado entre líneas */
-    color: #000000;
+    font-size: 20px; 
+    margin-top: 5px; 
+    line-height: 1.5; 
+    color: #ffffff;
 
 }
 
@@ -80,27 +116,127 @@ nav a {
     margin: 50px 0; /* Espacio arriba y abajo */
 }
 
-.profile-photo {
-    max-width: 200px; /* Ajusta el tamaño de la foto */
-    border-radius: 10px; /* Bordes redondeados para la imagen */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
-}
-
 .socials-container {
     text-align: center;
-    color: #000000
+    color: #ffffff
 }
 
 .social-logo {
-    max-width: 50px; /* Tamaño de los logos de redes sociales */
-    margin: 0 10px; /* Espacio entre logos */
+    max-width: 50px; 
+    margin: 0 10px; 
 }
 
 footer {
-    background-color: #333333; /* Fondo opaco para el footer */
+    background-color: #333333; 
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 10px 0;
     width: 100%;
+    margin-top: auto;
 }
 
+.contact-container {
+    max-width: 700px;
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.374); 
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(34, 0, 255, 0.366); 
+    color: #000;
+    text-align: left;
+}
+
+.contact-container h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.contact-container p {
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.contact-container a {
+    color: #4774E7;
+    text-decoration: none;
+}
+
+.contact-container a:hover {
+    text-decoration: underline;
+}
+
+.profile-photo-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-photo {
+    max-width: 200px;
+    border-radius: 10%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Sobre mí */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 30px; 
+}
+
+.text-section {
+    max-width: 80%; 
+    line-height: 1.8; 
+    padding-right: 30px; 
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo base de los enlaces */
+a {
+    color: #00c4ff; /* Color inicial del link */
+    text-decoration: none; /* Elimina subrayado por defecto */
+    font-weight: bold; /* Hace que el link sea más visible */
+    transition: color 0.3s, text-shadow 0.3s; /* Añade una transición suave */
+}
+
+/* Efecto cuando el mouse pasa por encima del enlace */
+a:hover {
+    color: #00ffff; /* Cambia el color al pasar el mouse */
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8); /* Añade un efecto de iluminación */
+    text-decoration: underline; /* Subraya el enlace al pasar el mouse */
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .text-section {
+        max-width: 100%; 
+        padding-right: 0; 
+    }
+
+    .image-section {
+        margin-top: 20px; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
