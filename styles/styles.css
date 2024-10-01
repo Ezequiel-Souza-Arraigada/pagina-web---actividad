@@ -8,13 +8,24 @@ body {
     background-image: url('/img/imagenfondo.jpg');
     background-size: cover;
     background-position: center;
-    background-color: rgba(0, 0, 51, 0.8);
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
+    position: relative;
     font-family: Arial, sans-serif;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(30, 30, 30, 0.678); /* Gris oscuro con transparencia */
+    z-index: -1; /* Detrás del contenido */
 }
 
 .header-container {
